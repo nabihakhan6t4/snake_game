@@ -1,9 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
-body{
-    background:#81A004;
+body {
+  background: #81a004;
+}
+#scoreBox {
+  position: absolute;
+  right: 200px;
+  font-size: 39px;
+  font-weight: bold;
+  top: 9px;
+  font-family: "New Tegomin", serif;
+}
+#highscoreBox{
+  position: absolute;
+  right: 140px;
+  font-size: 39px;
+  font-weight: bold;
+  top: 59px;
+  font-family: "New Tegomin", serif;
 }
 .body {
   background: url("images/bg-removebg-preview.png");
@@ -23,16 +41,22 @@ body{
   border: 2px solid black;
   color: white;
   display: grid;
-  grid-template-rows: repeat(18,1fr);
-  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
 }
-.head{
-    background: red;
+.head {
+  background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+  transform: scale(1.02);
+  border-radius: 9px;
+  border: 2px solid rgb(15, 1, 15);
 }
-.snake{
+.snake {
   background: purple;
+  border: 0.25vmin solid white;
+  border-radius: 12px;
 }
-.food{
-    background: yellow;
-
+.food {
+  background: linear-gradient(red, purple);
+  border: 0.25vmin solid black;
+  border-radius: 8px;
 }
