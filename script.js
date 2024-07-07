@@ -111,6 +111,7 @@ function gameEngine() {
 }
 
 // Initial setup
+musicSound.play();
 let highscore = localStorage.getItem("highscore"); // Get high score from local storage
 if (highscore === null) {
   highscore = 0; // Set initial high score if not found

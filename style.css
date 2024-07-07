@@ -15,7 +15,7 @@ body {
   top: 9px;
   font-family: "New Tegomin", serif;
 }
-#highscoreBox{
+#highscoreBox {
   position: absolute;
   right: 140px;
   font-size: 39px;
@@ -59,4 +59,30 @@ body {
   background: linear-gradient(red, purple);
   border: 0.25vmin solid black;
   border-radius: 8px;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+  #scoreBox,
+  #highscoreBox {
+    font-size: 20px; /* Decrease font size for smaller screens */
+    top: 5px; /* Adjust top position */
+    right: 10px; /* Adjust right position */
+  }
+
+  .body {
+    background-size: contain;
+  }
+
+  #scoreBox {
+    font-size: 18px; /* Further decrease font size if needed */
+    top: 40px; /* Adjust top position for score box */
+    right: 10px; /* Keep right position */
+  }
+
+  #highscoreBox {
+    font-size: 18px; /* Further decrease font size if needed */
+    top: 80px; /* Adjust top position for highscore box */
+    right: 10px; /* Keep right position */
+  }
 }
